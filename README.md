@@ -12,11 +12,11 @@
 
     - eslintrc: Add `require.resolve("@dk/eslint-config-fe")` to the "extends" array in your `.eslintrc.*` file. Make sure to put it **last,** so it gets the chance to override other configs.
 
-           ```json
-           {
-             "extends": [
-                "some-other-config-you-use",
-                require.resolve("@dk/eslint-config-fe")
-             ]
-           }
-           ```
+    ```
+       {
+         "extends": [
+            "some-other-config-you-use",
+            require.resolve("@dk/eslint-config-fe")
+         ]
+       }
+    ```
